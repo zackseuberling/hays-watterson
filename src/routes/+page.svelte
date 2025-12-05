@@ -41,7 +41,7 @@
     translate: calc(-1% * max(var(--scroll), 0)) 0;
   }
   .right-side {
-    translate: calc(-1% * (max(var(--scroll), 0) - 0)) 0;
+    translate: calc(-1% * min(var(--scroll), 50)) 0;
   }
 
 </style>
