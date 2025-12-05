@@ -38,7 +38,7 @@
   .left-side {
     background: #833AB4;
     background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 35%, rgba(252, 205, 50, 1) 69%, rgba(121, 252, 69, 1) 100%);
-    translate: calc(-1 * max(var(--scroll), 0)) 0;
+    translate: calc(-1% * max(var(--scroll), 0)) 0;
   }
   .right-side {
     translate: calc(-1% * (max(var(--scroll), 0) - 0)) 0;
