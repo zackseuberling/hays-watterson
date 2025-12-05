@@ -1,20 +1,20 @@
 <script>
   const setScroll = () => {
     const htmlElement = document.documentElement;
-    const percentage = htmlElement.scrollTop / htmlElement.clientHeight;
+    const percentage = htmlElement.scrollTop / htmlElement.offsetHeight;
 
     htmlElement.style.setProperty("--scroll", Math.min(percentage * 100, 100).toString())
   }
 </script>
 
-<svelte:document onscroll={setScroll} />
+<svelte:document onscroll={setScroll} onresize={setScroll} />
 
 <div class="fixed w-1/2 inset-y-0 overflow-hidden">
-  <div class="left-side h-full w-[100000px] bg-linear-to-r from-cyan-500 to-pink-700"></div>
+  <div class="left-side h-full w-[4000px]"></div>
 </div>
 
 <div class="fixed w-1/2 inset-y-0 right-0 overflow-hidden">
-  <div class="right-side h-full w-[100000px]  bg-linear-to-r from-orange-500  to-purple-900"></div>
+  <div class="right-side h-full w-dvw bg-linear-to-r from-orange-500  to-purple-900"></div>
 </div>
 
 <div class="h-[1400px] relative z-20 max-w-3xl mx-auto p-24">
@@ -36,7 +36,9 @@
   }
 
   .left-side {
-    translate: calc(-1% * (max(var(--scroll), 0) - 0)) 0;
+    background: #833AB4;
+    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 35%, rgba(252, 205, 50, 1) 69%, rgba(121, 252, 69, 1) 100%);
+    translate: calc(-1 * max(var(--scroll), 0)) 0;
   }
   .right-side {
     translate: calc(-1% * (max(var(--scroll), 0) - 0)) 0;
