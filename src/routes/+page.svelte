@@ -19,6 +19,14 @@
   let randomColors = shuffleArrayInPlace(colors).splice(0,5);
 
   onMount(() => {
+    // Support Test
+    const supportsContainerQueries = "container" in document.documentElement.style;
+
+    if (!supportsContainerQueries) {
+      // @ts-ignore
+      import("https://cdn.skypack.dev/container-query-polyfill");
+    }
+
     const htmlElement = document.documentElement;
     const height = htmlElement.offsetHeight;
 
@@ -35,13 +43,17 @@
 
 <div class="left-side set-height absolute left-0 right-1/2 h-dvh"></div>
 <div class="right-side set-height absolute right-0 left-1/2 h-dvh"></div>
-
 <div class="fixed inset-y-0 right-1/2 -mr-8 w-16 bg-transparent backdrop-blur-sm"></div>
 
-<article class="relative z-20 max-w-4xl mx-auto p-24 text-2xl">
-<h1 class="my-8">Hays Watterson Memorial Scholarship</h1>
+<article class="relative z-20 max-w-4xl mx-auto p-24 text-2xl text-white">
+  <header class="stuck-top sticky top-0 mb-8">
+    <h1 class="text-3xl mb-4">Hays Watterson Memorial Scholarship</h1>
+    <img src="/hays-watterson.jpeg" height="300" class="aspect-5/3 object-cover block mx-auto" alt="" />
+  </header>
 <p>Alexandra Hays and Brian Watterson were beloved members of our design community, and their impact in art, design, and education is deeply felt. To honor their memory, the Hays Watterson Memorial Scholarship endowment fund is being established at the Yale School of Art to help support talented graphic design students for years to come.</p>
 <p>The scholarship endowment is currently in the fundraising stage. Preliminary gifts totaling $35,000 have already been made but the endowment will not be secured until the fund reaches $50,000. If you are able, please help us reach our goal of $50,000 with a one-time gift or pledge that can be paid over 5 years.</p>
+
+<button class="sticky top-54 button p-4 bg-amber-50 mx-auto block rounded-full my-8">Donate to the Hays Watterson Memorial Scholarship Fund</button>
 
 <section>
   <h2 class="my-8">About Alexandra and Brian</h2>
@@ -64,6 +76,9 @@
 
 <style>
   @reference "tailwindcss";
+  p {
+    @apply font-serif;
+  }
   p + p {
     @apply mt-8;
   }
@@ -78,5 +93,23 @@
 
   .right-side {
     background: linear-gradient(-180deg, var(--color-3) 0%, var(--color-4) 37%, var(--color-4) 47%, var(--color-5) 84%);
+  }
+
+  .button {
+    background: linear-gradient(-90deg, var(--color-2) 0%, var(--color-4) 100%);
+  }
+
+  .stuck-top {
+    container-type: scroll-state;
+
+    > img {
+      transition: transform .25s linear;
+
+
+      @container scroll-state(stuck: top) {
+        transform: scale(.5);
+        transform-origin: top center;
+      }
+    }
   }
 </style>
