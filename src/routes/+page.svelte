@@ -1,30 +1,66 @@
-<script>
-  const setScroll = () => {
-    const htmlElement = document.documentElement;
-    const percentage = htmlElement.scrollTop / htmlElement.offsetHeight;
+<script lang="ts">
+	import { onMount } from "svelte";
 
-    htmlElement.style.setProperty("--scroll", Math.min(percentage * 100, 100).toString())
+  function shuffleArrayInPlace(array: Array<string>): Array<string> {
+    let currentIndex = array.length
+    let randomIndex;
+
+    while (currentIndex !== 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
   }
+
+  let colors = ["#932147", "#FF6363", "#873983", "#9CB3C2", "#B57D26", "#4257FA"]
+  let randomColors = shuffleArrayInPlace(colors).splice(0,5);
+
+  onMount(() => {
+    const htmlElement = document.documentElement;
+    const height = htmlElement.offsetHeight;
+
+    htmlElement.style.setProperty("--height", height.toString())
+    htmlElement.style.setProperty("--color-1", randomColors[0])
+    htmlElement.style.setProperty("--color-2", randomColors[1])
+    htmlElement.style.setProperty("--color-3", randomColors[2])
+    htmlElement.style.setProperty("--color-4", randomColors[3])
+    htmlElement.style.setProperty("--color-5", randomColors[4])
+  })
 </script>
 
-<svelte:document onscroll={setScroll} onresize={setScroll} />
 
-<div class="fixed w-1/2 inset-y-0 overflow-hidden bg-[rgba(121,252,69,1)]">
-  <div class="left-side h-full w-dvw"></div>
-</div>
 
-<div class="fixed w-1/2 inset-y-0 right-0 overflow-hidden">
-  <div class="left-0 absolute right-side h-full w-dvw bg-linear-to-r from-cyan-500  to-purple-900"></div>
-</div>
+<div class="left-side set-height absolute left-0 right-1/2 h-dvh"></div>
+<div class="right-side set-height absolute right-0 left-1/2 h-dvh"></div>
 
 <div class="fixed inset-y-0 right-1/2 -mr-8 w-16 bg-transparent backdrop-blur-sm"></div>
-<div class="relative z-20 max-w-3xl mx-auto p-24">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pellentesque fringilla justo, eu iaculis lacus auctor non. Vestibulum in aliquet felis, sit amet convallis leo. Proin at congue lorem, quis dignissim enim. Nulla viverra nisl sed eros faucibus, eget ultrices neque vestibulum. Vivamus sagittis gravida ex quis condimentum. Ut elementum lobortis ipsum nec posuere. Integer imperdiet fringilla libero vitae efficitur. Vivamus dapibus hendrerit lorem. Nam non dolor volutpat, condimentum odio eget, bibendum eros.</p>
-  <p>Donec convallis mi id fringilla finibus. Duis et libero non est molestie rutrum. Duis at aliquet ligula. Integer non metus sit amet purus sollicitudin sodales. Maecenas sed ultricies lorem, at consequat urna. Praesent interdum non dolor aliquam volutpat. Etiam auctor bibendum lorem. Mauris aliquam orci ac turpis aliquet laoreet. Nullam faucibus eget dolor quis porta. In luctus nulla a nisi bibendum pharetra. Nunc condimentum tortor nec tincidunt venenatis. Donec placerat in nisl at volutpat. Donec interdum tincidunt nisi quis mattis.</p>
-  <p>Proin fringilla nisl eros, mattis commodo ex semper ut. Morbi interdum leo a rutrum varius. Suspendisse commodo non nisl mollis pulvinar. Suspendisse ac efficitur mi, ac luctus dui. Vestibulum ex mauris, imperdiet quis neque nec, venenatis facilisis lorem. Phasellus scelerisque metus in purus convallis pharetra. Mauris hendrerit consectetur maximus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris at dignissim ante, nec dignissim mauris. Suspendisse rhoncus dignissim metus vitae cursus. Morbi posuere turpis ut sem tincidunt maximus. Suspendisse lobortis felis vestibulum neque tempor sollicitudin. Curabitur sit amet faucibus lorem. Sed semper risus ut ex laoreet, scelerisque aliquet ligula interdum.</p>
-  <p>Duis nec felis consectetur, accumsan nisl vitae, commodo turpis. Vestibulum venenatis, ipsum id aliquam gravida, arcu neque vehicula lacus, non porttitor tellus quam ut nibh. Quisque bibendum diam vel quam ornare lacinia. In sodales lobortis leo, vel ullamcorper leo convallis eget. Nunc venenatis purus massa, in vestibulum metus consectetur ac. Quisque vel justo mi. Praesent ac mauris vitae leo condimentum fringilla in nec urna. Vivamus laoreet gravida tincidunt. Duis id ultricies magna. Suspendisse ac neque est. Sed sagittis varius felis, quis pretium ante accumsan ut. Phasellus lobortis sem nec ipsum aliquam placerat. Vivamus tempus neque a mi interdum, nec aliquet eros dictum.</p>
-  <p>Aliquam at eros in lacus ultrices tincidunt. Nunc auctor quis tortor sit amet blandit. Curabitur nec egestas ante. Aenean posuere dolor vel augue luctus mollis. Quisque convallis sit amet ante quis porta. Donec ornare eros eget erat auctor, in tristique libero iaculis. Vivamus id imperdiet quam. Cras ligula felis, rhoncus in tristique ac, finibus id lectus. Mauris vitae urna imperdiet, tempus lorem quis, commodo mauris. Sed ultrices lacinia justo, vitae rutrum ligula efficitur ac. Phasellus venenatis a nunc sit amet rhoncus. Vestibulum tincidunt velit consequat quam porttitor, id efficitur mi suscipit. Suspendisse potenti. Nulla facilisi. Nullam id mattis sapien. Curabitur et interdum arcu.</p>
-</div>
+
+<article class="relative z-20 max-w-4xl mx-auto p-24 text-2xl">
+<h1 class="my-8">Hays Watterson Memorial Scholarship</h1>
+<p>Alexandra Hays and Brian Watterson were beloved members of our design community, and their impact in art, design, and education is deeply felt. To honor their memory, the Hays Watterson Memorial Scholarship endowment fund is being established at the Yale School of Art to help support talented graphic design students for years to come.</p>
+<p>The scholarship endowment is currently in the fundraising stage. Preliminary gifts totaling $35,000 have already been made but the endowment will not be secured until the fund reaches $50,000. If you are able, please help us reach our goal of $50,000 with a one-time gift or pledge that can be paid over 5 years.</p>
+
+<section>
+  <h2 class="my-8">About Alexandra and Brian</h2>
+
+  <p>Alexandra Hays and Brian Watterson met as graphic design MFA students at Yale, became life partners, and went on to flourishing design careers in the technology sector.</p>
+  <p>Alexandra Hays (1984-2024) attended the Yale School of Art in 2010. Her artistic sensibility and special attention to the small joys of daily life enriched her professional activities that included gallery director, designer, and writer. Early in her career, she worked as an artist, asking fundamental questions about who is an artist, and what is art for. She later went on to work at Gladstone Gallery, then Google, where she excelled as a writer and project director.</p>
+  <p>Brian Watterson (1984-2024) was a member of the Yale Graphic Design MFA Class of 2011. He was recognized in the design community as a devoted educator and for his remarkable aptitude in both graphic design and computer programming. In addition to his independent practice, he taught design at Parsons, was an early member of New York studio Linked by Air, and worked at Instagram as the lead designer of Threads.</p>
+  <p>Alex and Brian were kind, talented, and generous individuals whose creativity radiated throughout all aspects of their shared life. Their integrity, spirit, and devotion to excellence in design brightened and inspired the lives of all who knew them.</p>
+</section>
+
+<section>
+  <h2 class="my-8">About the Scholarship</h2>
+
+  <p>The Hays Watterson Memorial Scholarship is awarded annually to a second-year Yale MFA student in the graphic design department in memory of Alexandra Hays and Brian Watterson. This scholarship recognizes a talented designer who approaches technology with the kind of imagination and humanism that Alex and Brian brought to their life and work. The recipient is selected by a panel of full time faculty.</p>
+  <p>This award is supported through a gift made by Alexandra and Brian’s families, friends, and colleagues. As an endowed fund, this scholarship will be awarded in perpetuity, with the potential over time to provide full tuition for a second-year graphic design student.</p>
+</section>
+
+
+</article>
 
 <style>
   @reference "tailwindcss";
@@ -32,13 +68,15 @@
     @apply mt-8;
   }
 
-  .left-side {
-    background: #833AB4;
-    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 35%, rgba(252, 205, 50, 1) 69%, rgba(121, 252, 69, 1) 100%);
-    translate: calc(-1% * min(var(--scroll), 50)) 0;
-  }
-  .right-side {
-    translate: calc(-1% * min(var(--scroll), 50)) 0;
+  .set-height {
+    height: calc(1px * var(--height));
   }
 
+  .left-side {
+    background: linear-gradient(-180deg, var(--color-1) 0%, var(--color-2) 37%, var(--color-2) 47%, var(--color-5) 84%);
+  }
+
+  .right-side {
+    background: linear-gradient(-180deg, var(--color-3) 0%, var(--color-4) 37%, var(--color-4) 47%, var(--color-5) 84%);
+  }
 </style>
