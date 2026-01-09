@@ -1,1 +1,47 @@
 @import 'tailwindcss';
+
+@font-face {
+	font-family: 'Bradford';
+	src: url('/fonts/BradfordLLTrialWeb-Regular.woff2') format('woff2');
+	font-display: swap;
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Bradford';
+	src: url('/fonts/BradfordLLTrialWeb-Bold.woff2') format('woff2');
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Bradford';
+	src: url('/fonts/BradfordLLTrialWeb-Italic.woff2') format('woff2');
+	font-display: swap;
+	font-style: italic;
+	font-weight: normal;
+}
+
+@theme {
+	--font-sans: Helvetica, Arial, sans-serif;
+	--font-serif: Bradford, Georgia, Times, serif;
+	--text-base: 18px;
+}
+
+html {
+	@apply scroll-smooth;
+	@apply font-serif;
+}
+
+p + p {
+	@apply mt-8;
+}
+
+h1,
+h2,
+h3 {
+	@apply font-sans;
+	@apply font-bold;
+}
