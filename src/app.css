@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: 'Bradford';
-	src: url('/fonts/BradfordLLTrialWeb-Regular.woff2') format('woff2');
+	src: url('/fonts/BradfordLL-Regular.otf') format('opentype');
 	font-display: swap;
 	font-style: normal;
 	font-weight: normal;
@@ -18,7 +18,7 @@
 
 @font-face {
 	font-family: 'Bradford';
-	src: url('/fonts/BradfordLLTrialWeb-Italic.woff2') format('woff2');
+	src: url('/fonts/BradfordLL-Italic.otf') format('opentype');
 	font-display: swap;
 	font-style: italic;
 	font-weight: normal;
@@ -33,6 +33,7 @@
 html {
 	@apply scroll-smooth;
 	@apply font-serif;
+	@apply overscroll-none;
 }
 
 p + p {
