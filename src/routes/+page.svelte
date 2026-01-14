@@ -42,9 +42,9 @@
 <svelte:head><title>Hays Watterson Memorial Scholarship</title></svelte:head>
 
 <div class="relative w-full text-white">
-  <main class="z-10 max-w-[1000px] mx-auto p-12 md:p-24 text-base md:text-[28px] md:leading-[38px] relative">
+  <main class="z-10 max-w-[1000px] mx-auto p-4 md:px-24 md:py-12 text-base md:text-[28px] leading-[1.4em] md:leading-[1.3em] relative">
       <header class="mb-8">
-        <h1 class="text-center text-5xl leading-tight mb-4">Hays Watterson <br/> Memorial Scholarship</h1>
+        <h1 class="text-center text-3xl md:text-5xl leading-tight mb-4 md:mb-12">Hays Watterson <br/> Memorial Scholarship</h1>
         <img src="/hays-watterson.jpeg" height="300" width="1000" class="aspect-5/3 object-cover block mx-auto" alt="" />
       </header>
 
@@ -54,16 +54,16 @@
       <a href="https://secure.yale.imodules.com/s/1667/52/cart/form.aspx?sid=1667&gid=52&pgid=5594&cid=14277&bledit=1&dids=958.&origin=5767&_ga=2.21395512.26127765.1750777443-2035703091.1741025936" class="text-base text-center font-sans font-bold block sticky top-10 p-8 shadow-md hover:shadow-lg hover:bg-black/25 bg-black/15 backdrop-blur-xs cursor-pointer md:mx-16 rounded-full my-8 transition-all leading-0">Make a Donation</a>
 
       <section>
-        <h2 class="text-center text-xl my-16">About Alexandra and Brian</h2>
+        <h2 class="text-center my-16">About Alexandra and Brian</h2>
 
         <p>Alexandra Hays and Brian Watterson met as graphic design MFA students at Yale, became life partners, and went on to flourishing design careers in the technology sector.</p>
-        <p>Alexandra Hays (1984-2024) attended the Yale School of Art in 2010. Her artistic sensibility and special attention to the small joys of daily life enriched her professional activities that included gallery director, designer, and writer. Early in her career, she worked as an artist, asking fundamental questions about who is an artist, and what is art for. She later went on to work at Gladstone Gallery, then Google, where she excelled as a writer and project director.</p>
-        <p>Brian Watterson (1984-2024) was a member of the Yale Graphic Design MFA Class of 2011. He was recognized in the design community as a devoted educator and for his remarkable aptitude in both graphic design and computer programming. In addition to his independent practice, he taught design at Parsons, was an early member of New York studio Linked by Air, and worked at Instagram as the lead designer of Threads.</p>
+        <p>Alexandra Hays (1984&ndash;2024) attended the Yale School of Art in 2010. Her artistic sensibility and special attention to the small joys of daily life enriched her professional activities that included gallery director, designer, and writer. Early in her career, she worked as an artist, asking fundamental questions about who is an artist, and what is art for. She later went on to work at Gladstone Gallery, then Google, where she excelled as a writer and project director.</p>
+        <p>Brian Watterson (1984&ndash;2024) was a member of the Yale Graphic Design MFA Class of 2011. He was recognized in the design community as a devoted educator and for his remarkable aptitude in both graphic design and computer programming. In addition to his independent practice, he taught design at Parsons, was an early member of New York studio Linked by Air, and worked at Instagram as the lead designer of Threads.</p>
         <p>Alex and Brian were kind, talented, and generous individuals whose creativity radiated throughout all aspects of their shared life. Their integrity, spirit, and devotion to excellence in design brightened and inspired the lives of all who knew them.</p>
       </section>
 
       <section>
-        <h2 class="text-center text-xl my-16">About the Scholarship</h2>
+        <h2 class="text-center my-16">About the Scholarship</h2>
 
         <p>The Hays Watterson Memorial Scholarship is awarded annually to a second-year Yale MFA student in the graphic design department in memory of Alexandra Hays and Brian Watterson. This scholarship recognizes a talented designer who approaches technology with the kind of imagination and humanism that Alex and Brian brought to their life and work. The recipient is selected by a panel of full time faculty.</p>
         <p>This award is supported through a gift made by Alexandra and Brian’s families, friends, and colleagues. As an endowed fund, this scholarship will be awarded in perpetuity, with the potential over time to provide full tuition for a second-year graphic design student.</p>
