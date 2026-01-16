@@ -41,11 +41,11 @@
 
 <svelte:head><title>Hays Watterson Memorial Scholarship</title></svelte:head>
 
-<div class="relative w-full text-white">
-  <main class="z-10 max-w-[1000px] mx-auto p-4 md:px-24 md:py-12 text-base md:text-[28px] leading-[1.4em] md:leading-[1.3em] relative">
+<div class="relative w-full text-white p-4 md:px-24 md:py-12">
+  <main class="z-10 max-w-[1000px] mx-auto text-base md:text-[28px] leading-[1.4em] md:leading-[1.3em] relative">
       <header class="mb-8">
         <h1 class="text-center text-3xl md:text-5xl leading-tight mb-4 md:mb-12">Hays Watterson <br/> Memorial Scholarship</h1>
-        <img src="/hays-watterson.jpeg" height="300" width="1000" class="aspect-5/3 object-cover block mx-auto" alt="" />
+        <img src="/hays-watterson.jpg" height="300" width="1000" class="aspect-5/3 object-cover block mx-auto" alt="" />
       </header>
 
       <p>Alexandra Hays and Brian Watterson were beloved members of our design community, and their impact in art, design, and education is deeply felt. To honor their memory, the <strong>Hays Watterson Memorial Scholarship</strong> endowment fund is being established at the Yale School of Art to help support talented graphic design students for years to come.</p>
@@ -54,7 +54,7 @@
       <a href="https://secure.yale.imodules.com/s/1667/52/cart/form.aspx?sid=1667&gid=52&pgid=5594&cid=14277&bledit=1&dids=958.&origin=5767&_ga=2.21395512.26127765.1750777443-2035703091.1741025936" class="text-base text-center font-sans font-bold block sticky top-10 p-8 shadow-md hover:shadow-lg hover:bg-black/25 bg-black/15 backdrop-blur-xs cursor-pointer md:mx-16 rounded-full my-8 transition-all leading-0">Make a Donation</a>
 
       <section>
-        <h2 class="text-center my-16">About Alexandra and Brian</h2>
+        <h2 class="text-center my-8 md:my-16">About Alexandra and Brian</h2>
 
         <p>Alexandra Hays and Brian Watterson met as graphic design MFA students at Yale, became life partners, and went on to flourishing design careers in the technology sector.</p>
         <p>Alexandra Hays (1984&ndash;2024) attended the Yale School of Art in 2010. Her artistic sensibility and special attention to the small joys of daily life enriched her professional activities that included gallery director, designer, and writer. Early in her career, she worked as an artist, asking fundamental questions about who is an artist, and what is art for. She later went on to work at Gladstone Gallery, then Google, where she excelled as a writer and project director.</p>
@@ -63,7 +63,7 @@
       </section>
 
       <section>
-        <h2 class="text-center my-16">About the Scholarship</h2>
+        <h2 class="text-center my-8 md:my-16">About the Scholarship</h2>
 
         <p>The Hays Watterson Memorial Scholarship is awarded annually to a second-year Yale MFA student in the graphic design department in memory of Alexandra Hays and Brian Watterson. This scholarship recognizes a talented designer who approaches technology with the kind of imagination and humanism that Alex and Brian brought to their life and work. The recipient is selected by a panel of full time faculty.</p>
         <p>This award is supported through a gift made by Alexandra and Brian’s families, friends, and colleagues. As an endowed fund, this scholarship will be awarded in perpetuity, with the potential over time to provide full tuition for a second-year graphic design student.</p>
@@ -77,8 +77,8 @@
       </section>
   </main>
 
-  <footer class="relative z-10 p-12 w-full font-serif max-w-[1000px] mx-auto ">
-    <div class="flex w-full justify-between pb-36 uppercase">
+  <footer class="z-10 relative w-full font-serif max-w-[1000px] mx-auto pb-36">
+    <div class="flex gap-4 flex-col md:flex-row w-full text-center justify-between uppercase">
       <a href="https://www.art.yale.edu/">Yale School of Art</a>
       <a href="#top">&uparrow; Back to Top</a>
     </div>
