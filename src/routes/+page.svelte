@@ -49,7 +49,7 @@
       </header>
 
       <p>Alexandra Hays and Brian Watterson were beloved members of our design community, and their impact in art, design, and education is deeply felt. To honor their memory, the <strong>Hays Watterson Memorial Scholarship</strong> endowment fund is being established at the Yale School of Art to help support talented graphic design students for years to come.</p>
-      <p>The scholarship endowment is currently in the fundraising stage. Preliminary gifts totaling $35,000 have already been made but the endowment will not be secured until the fund reaches $50,000. If you are able, please help us reach our goal of $50,000 with a one-time gift or pledge that can be paid over 5 years.</p>
+      <p>The scholarship endowment is currently in the fundraising stage. Preliminary gifts totaling $35,000 have already been made but the endowment will not be secured until the fund reaches $50,000. Please help us reach our goal of $50,000 with a one-time gift or pledge that can be paid over 5 years.</p>
 
       <a href="https://secure.yale.imodules.com/s/1667/52/cart/form.aspx?sid=1667&gid=52&pgid=5594&cid=14277&bledit=1&dids=958.&origin=5767&_ga=2.21395512.26127765.1750777443-2035703091.1741025936" class="text-base text-center font-sans font-bold block sticky top-10 p-8 shadow-md hover:shadow-lg hover:bg-black/25 bg-black/15 backdrop-blur-xs cursor-pointer md:mx-16 rounded-full my-8 transition-all leading-0">Make a Donation</a>
 
