@@ -76,16 +76,19 @@
       <section>
         <p class="italic my-16 text-center md:mx-8" >
           If you have additional questions about donating to the fund please contact
-          Nicole Freeman <a class="underline" href="mailto:nicole.freeman@yale.edu">nicole.freeman@yale.edu</a>
+          Nicole Freeman, Director of Development and Alumni Relations, Yale School of Art <a class="underline" href="mailto:nicole.freeman@yale.edu">nicole.freeman@yale.edu</a>
         </p>
       </section>
   </main>
 
   <footer class="z-10 relative w-full font-serif max-w-[1000px] mx-auto pb-36">
-    <div class="flex gap-4 flex-col md:flex-row w-full text-center justify-between uppercase">
+    <div class="flex gap-4 flex-col md:flex-row w-full text-center justify-between uppercase mb-12">
       <a href="https://www.art.yale.edu/">Yale School of Art</a>
       <a href="#top">&uparrow; Back to Top</a>
     </div>
+    <div class="text-xs md:text-sm leading-tight text-center">
+      <p>Site design and management by Zak Klauck, Keri Bronk, Lauren Francescone with additional development by Zack Seuberling.</p>
+      <p>This scholarship is supported by the Yale Endowment Funds and the Office of Development. <br /> For more information please contact <a href="mailto:nicole.freeman@yale.edu">nicole.freeman@yale.edu</a>.</p></div>
   </footer>
 
   <div class="z-0 left-side absolute left-0 right-1/2 h-full inset-0"></div>
