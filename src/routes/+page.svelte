@@ -45,7 +45,11 @@
   <main class="z-10 max-w-[1000px] mx-auto text-base md:text-[28px] leading-[1.4em] md:leading-[1.3em] relative">
       <header class="mb-8">
         <h1 class="text-center text-3xl md:text-5xl leading-tight mb-4 md:mb-12">Hays Watterson <br/> Memorial Scholarship</h1>
-        <img fetchpriority="high" src="/hays-watterson.webp" height="300" width="1000" class="aspect-5/3 object-cover block mx-auto" alt="" />
+        <enhanced:img
+          src="/static/hays-watterson.jpg"
+          sizes="(min-width:1200px) 1000px, (min-width:768px) 720px, (min-width:500px) 396px, "
+          class="aspect-5/3 object-cover block mx-auto"
+          alt="" />
       </header>
 
       <p>Alexandra Hays and Brian Watterson were beloved members of our design community, and their impact in art, design, and education is deeply felt. To honor their memory, the <strong>Hays Watterson Memorial Scholarship</strong> endowment fund is being established at the Yale School of Art to help support talented graphic design students for years to come.</p>
