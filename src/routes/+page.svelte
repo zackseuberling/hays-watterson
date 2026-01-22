@@ -41,8 +41,10 @@
 
 <svelte:head><title>Hays Watterson Memorial Scholarship</title></svelte:head>
 
+
 <div class="relative w-full text-white p-4 md:px-24 md:py-12">
   <main class="z-10 max-w-[1000px] mx-auto text-base md:text-[28px] leading-[1.4em] md:leading-[1.3em] relative">
+    <img src="/SoA-shield-white-transp.png" class="fixed top-4 md:top-12 z-10 w-[30px] md:w-[90px] md:left-1 xl:w-[120px] xl:left-8" alt="Yale School of Art" />
       <header class="mb-8">
         <h1 class="text-center text-3xl md:text-5xl leading-tight mb-4 md:mb-12">Hays Watterson <br/> Memorial Scholarship</h1>
         <enhanced:img
@@ -56,7 +58,11 @@
       <p>The scholarship endowment is currently in the fundraising stage. Preliminary gifts totaling $35,000 have already been made, but the endowment will not be secured until the fund reaches $50,000. We are hoping to raise a total of $100,000 by June 1, 2026.</p>
       <p>Please help us reach our goal of $100,000, with a one-time gift or a pledge that can be paid over 5 years.</p>
 
-      <a href="https://secure.yale.imodules.com/s/1667/52/cart/form.aspx?sid=1667&gid=52&pgid=5594&cid=14277&bledit=1&dids=958.&origin=5767&_ga=2.21395512.26127765.1750777443-2035703091.1741025936" class="text-base text-center font-sans font-bold block sticky top-10 p-8 shadow-md hover:shadow-lg hover:bg-black/25 bg-black/15 backdrop-blur-xs cursor-pointer md:mx-16 rounded-full my-8 transition-all leading-0">Make a Donation</a>
+      <a
+        href="https://secure.yale.imodules.com/s/1667/52/cart/form.aspx?sid=1667&gid=52&pgid=5594&cid=14277&bledit=1&dids=958.&origin=5767&_ga=2.21395512.26127765.1750777443-2035703091.1741025936"
+        class="text-base text-center font-sans font-bold block sticky top-12 p-8 shadow-md hover:shadow-lg hover:bg-black/25 bg-black/15 backdrop-blur-xs cursor-pointer md:mx-16 rounded-full my-8 transition-all leading-0">
+        Make a Donation
+      </a>
 
       <section>
         <h2 class="text-center my-8 md:my-16">About Alexandra and Brian</h2>
