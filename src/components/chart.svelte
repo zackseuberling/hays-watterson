@@ -1,4 +1,4 @@
-<div class="border border-solid border-white p-12 m-6">
+<div class="border border-solid border-white p-12 md:mx-16 my-8">
   <div class="grid grid-cols-3 grid-rows-10 h-[300px]">
     <div class="border-t p-2 border-white row-span-5 font-sans text-sm">
       Fundraising Goal <br />
