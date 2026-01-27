@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
+	import Chart from "../components/chart.svelte";
 
   function shuffleArrayInPlace(array: Array<Array<string>>): Array<Array<string>> {
     let currentIndex = array.length
@@ -58,6 +59,8 @@
       <p>The scholarship endowment is currently in the fundraising stage. Preliminary gifts totaling $35,000 have already been made, but the endowment will not be secured until the fund reaches $50,000. We are hoping to raise a total of $100,000 by June 1, 2026.</p>
       <p>Please help us reach our goal of $100,000, with a one-time gift or a pledge that can be paid over 5 years.</p>
 
+      <Chart />
+
       <a
         href="https://secure.yale.imodules.com/s/1667/52/cart/form.aspx?sid=1667&gid=52&pgid=5594&cid=14277&bledit=1&dids=958.&origin=5767&_ga=2.21395512.26127765.1750777443-2035703091.1741025936"
         class="text-base text-center font-sans font-bold block sticky top-12 p-8 shadow-md hover:shadow-lg hover:bg-black/25 bg-black/15 backdrop-blur-xs cursor-pointer md:mx-16 rounded-full my-8 transition-all leading-0">
@@ -76,7 +79,7 @@
       <section>
         <h2 class="text-center my-8 md:my-16">About the Scholarship</h2>
 
-        <p>The Hays Watterson Memorial Scholarship is awarded annually to a second-year Yale MFA student in the graphic design department in memory of Alexandra Hays and Brian Watterson. This scholarship recognizes a talented designer who approaches technology with the kind of imagination and humanism that Alex and Brian brought to their life and work. The recipient is selected by a panel of full time faculty.</p>
+        <p>The Hays Watterson Memorial Scholarship is awarded annually to a second-year Yale MFA student in the graphic design department in memory of Alexandra Hays and Brian Watterson. This scholarship recognizes a talented designer who approaches technology with the kind of imagination and humanism that Alex and Brian brought to their life and work.</p>
         <p>This award is supported through a gift made by Alexandra and Brian’s families, friends, and colleagues. As an endowed fund, this scholarship will be awarded in perpetuity, with the potential over time to provide full tuition for a second-year graphic design student.</p>
       </section>
 
